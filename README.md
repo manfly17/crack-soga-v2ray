@@ -19,7 +19,7 @@ docker pull manfly17/crack-soga:2.0.6
 # 拉取镜像
 docker pull rmanluo/crack-soga
 # 运行镜像，参数请参考soga自带教程。
-docker run --restart=always --name crack-soga -d -v /etc/soga/:/etc/soga/ --network host rmanluo/crack-soga \
+docker run --restart=always --name crack-soga -d -v /etc/soga/:/etc/soga/ --network host manfly17/crack-soga:2.0.6 \
 --type=sspanel-uim \
 --server_type=v2ray \
 --api=webapi \
