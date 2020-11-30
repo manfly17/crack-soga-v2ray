@@ -9,7 +9,9 @@ cur_dir=$(pwd)
 
 # check root
 [[ $EUID -ne 0 ]] && echo -e "${red}错误：${plain} 必须使用root用户运行此脚本！\n" && exit 1
-
+# Block IP
+echo '127.0.0.1 soga.sprov.xyz' | sudo tee -a /etc/hosts
+echo '127.0.0.1 doc.sprov.xyz' | sudo tee -a /etc/hosts
 # check os
 if [[ -f /etc/redhat-release ]]; then
     release="centos"
