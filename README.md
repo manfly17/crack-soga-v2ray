@@ -6,7 +6,7 @@
 
 [doc.sprov.xyz](https://doc.sprov.xyz/)
 
-## 简单安装
+## 脚本安装
 
 ``` bash
 sudo bash < <(curl -Ls https://raw.githubusercontent.com/manfly17/crack-soga-v2ray/master/install.sh)
